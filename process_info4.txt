@@ -1,0 +1,6 @@
+Process SpawnPoolWorker-1 took 0.25003886222839355 seconds
+Process SpawnPoolWorker-9 took 0.2176957130432129 seconds
+Process SpawnPoolWorker-2 took 0.0895071029663086 seconds
+Process SpawnPoolWorker-3 took 0.015003442764282227 seconds
+Process SpawnPoolWorker-8 took 0.03099966049194336 seconds
+Process SpawnPoolWorker-10 took 0.029000043869018555 seconds

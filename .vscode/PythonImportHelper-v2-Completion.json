@@ -1,0 +1,216 @@
+[
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "current_process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "current_process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "current_process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "Parallel4",
+        "description": "Parallel4",
+        "peekOfCode": "def process_image(image_part, shift_value, color_channel):\n    # Record start time\n    start_time = time.time()\n    # Convert PIL Image to numpy array\n    img_shift = np.array(image_part)\n    # Shift the colour channel\n    img_shift[..., color_channel] = (img_shift[..., color_channel] + shift_value).clip(\n        0, 255\n    )\n    # Convert numpy array to PIL Image",
+        "detail": "Parallel4",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Parallel4",
+        "description": "Parallel4",
+        "peekOfCode": "def main():\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/big_pic.jpg\")\n    width, height = img.size\n    part_height = height // 2\n    part_width = width // 3\n    image_parts = []\n    for i in range(2):\n        for j in range(3):\n            left = j * part_width\n            upper = i * part_height",
+        "detail": "Parallel4",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "Parallel5",
+        "description": "Parallel5",
+        "peekOfCode": "def process_image(image_part, shift_value, color_channel):\n    # Record start time\n    start_time = time.time()\n    # Convert PIL Image to numpy array\n    img_shift = np.array(image_part)\n    # Shift the colour channel\n    img_shift[..., color_channel] = (img_shift[..., color_channel] + shift_value).clip(\n        0, 255\n    )\n    # Convert numpy array to PIL Image",
+        "detail": "Parallel5",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Parallel5",
+        "description": "Parallel5",
+        "peekOfCode": "def main():\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/big_pic.jpg\")\n    # Output file name numbers\n    pic_num = str(32)\n    process_num = str(18)\n    # Number of rows and columns\n    # IMPORTANT!!!\n    # matrix_row * matrix_column = number_of_cores_and_variables\n    matrix_row = 6\n    matrix_column = 4",
+        "detail": "Parallel5",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "Parallel6",
+        "description": "Parallel6",
+        "peekOfCode": "def process_image(image_part, shift_value, color_channel):\n    # Convert PIL Image to numpy array\n    img_shift = np.array(image_part)\n    # Shift the colour channel\n    img_shift[..., color_channel] = (img_shift[..., color_channel] + shift_value).clip(\n        0, 255\n    )\n    # Convert numpy array to PIL Image\n    processed_img = Image.fromarray(img_shift.astype(\"uint8\"))\n    # Get process name",
+        "detail": "Parallel6",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Parallel6",
+        "description": "Parallel6",
+        "peekOfCode": "def main():\n    start_time = time.time()  # Start timer\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/big_pic.jpg\")\n    # Output file name numbers\n    pic_num = str(41)\n    process_num = str(27)\n    # Number of rows and columns\n    # IMPORTANT!!!\n    # matrix_row * matrix_column = number_of_cores_and_variables\n    matrix_row = 6",
+        "detail": "Parallel6",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "Parrallel3",
+        "description": "Parrallel3",
+        "peekOfCode": "def process_image(image_part, shift_value, color_channel):\n    # Convert PIL Image to numpy array\n    img_shift = np.array(image_part)\n    # Shift the colour channel\n    img_shift[..., color_channel] = (img_shift[..., color_channel] + shift_value).clip(\n        0, 255\n    )\n    # Convert numpy array to PIL Image\n    return Image.fromarray(img_shift.astype(\"uint8\"))\ndef main():",
+        "detail": "Parrallel3",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Parrallel3",
+        "description": "Parrallel3",
+        "peekOfCode": "def main():\n    # CHANGE DIR PATH ON DIFFERENT PC!!!\n    # 00000.png doesn't work at all\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/logo.png\")\n    # Img dimesnions\n    width, height = img.size\n    # Calculate the size of each part\n    part_height = height // 2\n    part_width = width // 3\n    # store image parts",
+        "detail": "Parrallel3",
+        "documentation": {}
+    },
+    {
+        "label": "shift_RGB_value",
+        "kind": 5,
+        "importPath": "rand",
+        "description": "rand",
+        "peekOfCode": "shift_RGB_value = [random.randrange(-250, 250, 10)]\ncolor_channels = [random.randint(0, 2)]  # 0: Red, 1: Green, 2: Blue\n# Number of cores\nwhile len(shift_RGB_value) < (19):\n    rand_color = random.randint(0, 2)\n    # Check if the previous number is the same\n    if rand_color == color_channels[-1]:\n        continue\n    valueer = random.randrange(-250, 250, 10)\n    shift_RGB_value.append(valueer)",
+        "detail": "rand",
+        "documentation": {}
+    },
+    {
+        "label": "color_channels",
+        "kind": 5,
+        "importPath": "rand",
+        "description": "rand",
+        "peekOfCode": "color_channels = [random.randint(0, 2)]  # 0: Red, 1: Green, 2: Blue\n# Number of cores\nwhile len(shift_RGB_value) < (19):\n    rand_color = random.randint(0, 2)\n    # Check if the previous number is the same\n    if rand_color == color_channels[-1]:\n        continue\n    valueer = random.randrange(-250, 250, 10)\n    shift_RGB_value.append(valueer)\n    color_channels.append(rand_color)",
+        "detail": "rand",
+        "documentation": {}
+    }
+]

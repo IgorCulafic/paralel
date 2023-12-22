@@ -1,0 +1,16 @@
+Process SpawnPoolWorker-2 took 0.1042947769165039 seconds
+Process SpawnPoolWorker-1 took 0.06321406364440918 seconds
+Process SpawnPoolWorker-8 took 0.013999223709106445 seconds
+Process SpawnPoolWorker-3 took 0.014003992080688477 seconds
+Process SpawnPoolWorker-4 took 0.011003494262695312 seconds
+Process SpawnPoolWorker-5 took 0.01731586456298828 seconds
+Process SpawnPoolWorker-6 took 0.014999628067016602 seconds
+Process SpawnPoolWorker-7 took 0.011999845504760742 seconds
+Process SpawnPoolWorker-12 took 0.013000726699829102 seconds
+Process SpawnPoolWorker-9 took 0.012000799179077148 seconds
+Process SpawnPoolWorker-11 took 0.010999917984008789 seconds
+Process SpawnPoolWorker-10 took 0.010997772216796875 seconds
+Process SpawnPoolWorker-2 took 0.011999845504760742 seconds
+Process SpawnPoolWorker-1 took 0.011003494262695312 seconds
+Process SpawnPoolWorker-8 took 0.011000871658325195 seconds
+Process SpawnPoolWorker-3 took 0.009506940841674805 seconds
