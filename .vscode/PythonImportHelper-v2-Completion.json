@@ -32,12 +32,36 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "numpy",
         "description": "numpy",
         "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "current_process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
         "documentation": {}
     },
     {
@@ -175,6 +199,24 @@
         "description": "Parallel6",
         "peekOfCode": "def main():\n    start_time = time.time()  # Start timer\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/big_pic.jpg\")\n    # Output file name numbers\n    pic_num = str(41)\n    process_num = str(27)\n    # Number of rows and columns\n    # IMPORTANT!!!\n    # matrix_row * matrix_column = number_of_cores_and_variables\n    matrix_row = 6",
         "detail": "Parallel6",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "Parallel7",
+        "description": "Parallel7",
+        "peekOfCode": "def process_image(image_part, shift_value, color_channel):\n    # Convert PIL Image to numpy array\n    img_shift = np.array(image_part)\n    # Shift the colour channel\n    img_shift[..., color_channel] = (img_shift[..., color_channel] + shift_value).clip(\n        0, 255\n    )\n    # Convert numpy array to PIL Image\n    processed_img = Image.fromarray(img_shift.astype(\"uint8\"))\n    # Get process name",
+        "detail": "Parallel7",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Parallel7",
+        "description": "Parallel7",
+        "peekOfCode": "def main():\n    start_time = time.time()  # Start timer\n    img = Image.open(\"C:/Users/pitch/OneDrive/Desktop/paralel/big_pic.jpg\")\n    # Output file name numbers\n    pic_num = str(48)\n    process_num = str(34)\n    # Number of rows and columns\n    matrix_row = 6\n    matrix_column = 4\n    # Number of cores and variables",
+        "detail": "Parallel7",
         "documentation": {}
     },
     {
