@@ -38,9 +38,7 @@ def main():
     matrix_column = 4
 
     # Number of cores and variables
-    number_of_cores_and_variables = (
-        24  # Set this to the number of cores you want to use
-    )
+    number_of_cores_and_variables = 24
 
     width, height = img.size
     part_height = height // matrix_row
