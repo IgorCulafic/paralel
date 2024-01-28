@@ -88,9 +88,11 @@ def main():
     total_time = end_time - start_time
 
     # Core performance TXT file
+    
     with open(os.path.join(directory, "process_info" + process_num + ".txt"), "w") as f:
         f.write(f"The program took {total_time} seconds\n")
-
+#print out the message "Complete"
+        
 
 if __name__ == "__main__":
     main()
